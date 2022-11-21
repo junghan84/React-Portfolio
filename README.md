@@ -7,9 +7,9 @@
   This is a portfolio I wrote using React to showcase my full stack development skills and some of the projects I have worked on.
 
   ## Link
-  [My Portfolio](/)
+  [My Portfolio](https://junghan84.github.io/React-Portfolio/)
 
-  ![Screenshot](./.png)
+  ![Screenshot](./portfolioscreenshot.png)
 
   ## Table of Contents
   * [Description](#description)
