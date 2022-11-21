@@ -1,0 +1,340 @@
+/* Styling applying to the entire page */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+  }
+
+  :root {
+    --light: #f0ead2;
+    --primary: #dde5b6;
+    --secondary: #adc178;
+    --tertiary: #a98467;
+    --dark: #6c584c;
+    --error: rgb(228, 46, 1);
+    --spacing-one: calc(1rem * 0.5);
+    --spacing-two: calc(1rem);
+    --spacing-five: calc(2.5rem);
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--dark);
+  }
+
+  p {
+    margin: 10px;
+  }
+
+  h1 {
+    display: inline;
+    align-self: center;
+    padding: var(--spacing-two);
+    font-size: 48px;
+  }
+/*End general styling*/
+
+
+/* Styling for the header and navigation menu */
+  .header {
+    background-color: var(--light);
+    display: flex;
+    justify-content: space-between;
+    min-height: 100px;
+    border-bottom: 5px solid var(--tertiary);
+    border-right: 5px solid var(--tertiary);
+    color: var(--dark);
+    
+  }
+
+  .nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    align-items: center;
+  }
+  
+  .list-item {
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+  
+  .navActive {
+    color: var(--tertiary);
+  }
+/* End header and navigation menu styling */
+
+
+/* Styling for the footer */
+  .footer {
+    height: 50px;
+    background-color: var(--light);
+    border-top: 5px solid var(--tertiary);
+    border-right: 5px solid var(--tertiary);
+    color: var(--dark);
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .footer a:hover {
+    color: var(--tertiary);
+  }
+
+  .footer-list {
+    padding: 0;
+  }
+
+  .footer-list li {
+    padding: 0 25px 0 25px;
+    font-size: 20px;
+  }
+/* End footer styling */
+
+
+/* General styling for the content portion of the page */
+  .content-wrapper {
+    min-height: calc(100vh - 150px);
+    background-color: var(--secondary);
+  }
+
+  .section-header {
+    margin-bottom: 30px;
+    color: var(--dark);
+  }
+
+  section{
+    padding: var(--spacing-two);
+    color: black;
+  }
+/* End general content section styling */
+
+
+/* Styling pertaining to the projects page */
+  .project-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .project-item {
+    width: 30%;
+    min-height: 300px;
+    margin: 10px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-item a {
+    color: black;
+  }
+
+  .project-header {
+    background-color: var(--primary);
+    background-color: var(--light);
+  }
+
+  .project-title {
+    font-size: 24px;
+    color: black;
+    margin-right: 50px;
+  }
+
+  .project-title:hover {
+    color: var(--tertiary);
+  }
+
+  .project-tech {
+    margin: 0;
+    background-color: var(--tertiary);
+  }
+
+  .project-github:hover {
+    color: var(--tertiary);
+  }
+
+  .Note-Taker {
+    background-image: url("./assets/images/sky.jpg");
+    background-position: 75% 80%;
+    background-repeat: no-repeat;
+  }
+
+  .weather-dashborder {
+    background-image: url("./assets/images/fire.jpg");
+    background-position: 30% 15%;
+    background-repeat: no-repeat;
+  }
+
+  .NoSQL-Social-Network-API{
+    background-image: url("./assets/images/ground.jpg");
+    background-position: 60% 30%;
+    background-repeat: no-repeat;
+  }
+
+  .Progressive-Web-Applications-PWA-Text-Editor {
+    background-image: url("./assets/images/sand.jpg");
+    background-position: 50% 0%;
+  }
+
+  .community-vision {
+    background-image: url('./assets/images/wind.jpg');
+  }
+
+/* End styling pertaining to projects page */
+
+
+/* Styling for the Contact form page */
+  form div {
+    margin-bottom: 25px;
+  }
+
+  label {
+    display: block;
+  }
+
+  input {
+    width: 40%;
+    font-size: 18px;
+    outline: none;
+  }
+
+  textarea {
+    width: 40%;
+    font-size: 18px;
+    outline: none;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+  }
+
+  .error-text {
+    color: var(--error)
+  }
+
+  button {
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 0.25rem 1rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 0 1px;
+    background-color: var(--tertiary);
+  }
+/* End styling for Contact form */
+
+
+/* Styling for the Resume page */
+  .download-link {
+    font-size: 18px;
+    margin-left: 0;
+  }
+
+  .download-link a:hover {
+    color: var(--tertiary);
+  }
+
+  .list-header {
+    margin-top: 25px;
+    font-size: 20px;
+  }
+
+  .prof-list {
+    font-size: 18px;
+  }
+/* End styling for the Resume page */
+
+
+/* Media Queries for smaller devices */
+@media screen and (max-width: 768px) {
+
+  .header {
+    flex-direction: column;
+  }
+
+  .nav-list {
+    justify-content: center;
+  }
+
+  .section-header {
+    font-size: 30px;
+  }
+
+  .content-wrapper {
+    min-height: calc(100vh - 170px);
+  }
+
+  .project-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-item {
+    width: 80%;
+  }
+
+  .project-title {
+    font-size: 30px;
+  }
+
+  .project-github {
+    font-size: 22px;
+  }
+
+  .project-tech {
+    font-size: 22px;
+  }
+
+  input {
+    width: 80%;
+    font-size: 22px;
+  }
+
+  textarea {
+    width: 80%;
+    font-size: 22px;
+  }
+
+  label {
+    font-size: 22px;
+  }
+
+  button {
+    font-size: 2rem;
+    padding: 0.5rem 1.25rem;
+  }
+
+  .download-link {
+    font-size: 22px;
+  }
+
+  .list-header {
+    font-size: 26px;
+  }
+
+  .prof-list {
+    font-size: 22px;
+  }
+    
+}
+
+@media screen and (max-width: 575px) {
+
+.project-title {
+  font-size: 20px;
+}
+
+
+.fo-char-mgr .project-tech{
+  font-size: 15px;
+}
+}
